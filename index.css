@@ -1,0 +1,148 @@
+@font-face{
+    src: url(./Montserrat/Montserrat-Medium.ttf);
+    font-family: Montserrat;
+    font-weight: 100;
+}
+@font-face{
+    src: url(./Montserrat/Montserrat-Bold.ttf);
+    font-family: Montserrat-Bold;
+    font-weight: 100;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-columns: 33vw 34vw 33vw;
+    grid-template-areas: "top-bar top-bar top-bar"
+                        "content content content"
+                        "bottom-bar bottom-bar bottom-bar";
+    font-family: Montserrat;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(241, 242, 236);
+}
+
+.top-bar{
+    grid-area: top-bar;
+    align-self: top;
+    font-family: Montserrat-Bold;
+    font-weight: 10;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    color:  rgb(241, 242, 236);
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(44, 78, 45);
+}
+
+.top-bar img {
+    height: 110px;
+    width: auto;
+    float: left;
+    padding-left: 15px;
+}
+
+.top-bar h1{
+    float: left;
+    padding-top: 20px;
+}
+
+.top-bar .btn-1 {
+    font-size: 1rem;
+    background-color:  rgb(44, 78, 45);
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid rgb(241, 242, 236);
+    border-radius: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(241, 242, 236);
+    cursor: pointer;
+    float: right;
+    margin:25px 10px 0 0;
+    /* border: solid 0.5px black; */
+}
+
+.top-bar .btn-1:hover{
+    background-image:linear-gradient(rgb(34, 34, 34), black) ;
+    border: 1px solid rgb(241, 242, 236);
+    color: rgb(241, 242, 236);
+    transition: 0.25s linear;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.content{
+    grid-area: content;
+    display: flexbox;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.title{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.description{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.button .btn {
+    font-size: 1rem;
+    background-color: rgb(241, 242, 236);
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    cursor: pointer;
+    /* border: solid 0.5px black; */
+}
+
+.button .btn:hover{
+    background-image: linear-gradient(rgb(44, 78, 45), rgb(0, 84, 39));
+    color: whitesmoke;
+    transition: 0.25s linear;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.bottom-bar {
+    grid-area: bottom-bar;
+    display: flex;
+    background-color: rgb(34, 34, 34);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-bar img {
+    padding: 15px 25px 0 25px;
+    height: 70px;
+    width: auto;
+    float: left;
+    position: relative;
+}
+
+.bottom-bar h3{
+    /* float: left; */
+    /* color: black; */
+    color: rgb(241, 242, 236);
+    font-size: 13px;
+}
