@@ -54,10 +54,10 @@ body {
     background-color:  rgb(44, 78, 45);
     text-decoration: none;
     padding: 10px;
-    border: 1px solid  whitesmoke;
+    border: 1px solid  #fff;
     border-radius: 17px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: whitesmoke;
+    color: #fff;
     cursor: pointer;
     float: right;
     margin:25px 10px 0 0;
@@ -66,8 +66,8 @@ body {
 
 .top-bar .btn-1:hover{
     background-image:linear-gradient(rgb(34, 34, 34), black) ;
-    border: 1px solid whitesmoke;
-    color: whitesmoke;
+    border: 1px solid #fff;
+    color: #fff;
     transition: 0.25s linear;
 }
 
@@ -104,7 +104,7 @@ body {
 
 .button .btn {
     font-size: 1rem;
-    background-color: whitesmoke;
+    background-color: #fff;
     text-decoration: none;
     padding: 10px;
     border: 1px solid black;
@@ -117,7 +117,7 @@ body {
 
 .button .btn:hover{
     background-image: linear-gradient(rgb(44, 78, 45), rgb(0, 84, 39));
-    color:  whitesmoke;
+    color:  #fff;
     transition: 0.25s linear;
 }
 
@@ -142,6 +142,6 @@ body {
 .bottom-bar h3{
     /* float: left; */
     /* color: black; */
-    color: whitesmoke;
+    color: #fff;
     font-size: 13px;
 }
