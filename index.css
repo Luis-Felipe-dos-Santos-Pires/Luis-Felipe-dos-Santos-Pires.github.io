@@ -1,11 +1,21 @@
 @font-face{
-    src: url(./Montserrat/Montserrat-Medium.ttf);
+    src: url(./Fonts/Montserrat/Montserrat-Medium.ttf);
     font-family: Montserrat;
     font-weight: 100;
 }
 @font-face{
-    src: url(./Montserrat/Montserrat-Bold.ttf);
+    src: url(./Fonts/Montserrat/Montserrat-Bold.ttf);
     font-family: Montserrat-Bold;
+    font-weight: 100;
+}
+@font-face{
+    src: url(./Fonts/Amatic_SC/AmaticSC-Bold.ttf);
+    font-family: Amatic-B;
+    font-weight: 100;
+}
+@font-face{
+    src: url(./Fonts/Amatic_SC/AmaticSC-Regular.ttf);
+    font-family: Amatic;
     font-weight: 100;
 }
 
@@ -26,20 +36,20 @@ body {
 
 .top-bar{
     grid-area: top-bar;
-    align-self: top;
     font-family: Montserrat-Bold;
     font-weight: 10;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
     color:  rgb(241, 242, 236);
     height: 10vh;
     width: 100%;
     background-color: rgb(44, 78, 45);
 }
 
+.wrap-top-bar {
+    margin: 0 20vh 0 20vh
+}
+
 .top-bar img {
-    height: 110px;
+    height: 120px;
     width: auto;
     float: left;
     padding-left: 15px;
@@ -47,7 +57,9 @@ body {
 
 .top-bar h1{
     float: left;
+    font-size: 2.3rem;
     padding-top: 20px;
+    font-family: Amatic-B;
 }
 
 .top-bar .btn-1 {
@@ -77,9 +89,12 @@ body {
 .content{
     grid-area: content;
     display: flexbox;
-    background-color: transparent;
     height: 100%;
     width: 100%;
+}
+
+.wrap-content{
+    margin: 0 20vh 0 20vh 
 }
 
 .title{
@@ -123,14 +138,46 @@ body {
     transition: 0.25s linear;
 }
 
+.images {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.phone-css-effect{
+    padding: 20px 40px;
+}
+
+
+.phone-css-effect img {
+    height: 300px;
+    width: auto;
+}
+
+.qrcode{
+    padding: 20px;
+    border-left: 1px solid black;
+}
+
+.qrcode img{
+    height: 150px;
+    width: auto;
+}
+
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .bottom-bar {
-    grid-area: bottom-bar;
+    grid-area: bottom-bar;  
+    background-color: rgb(34, 34, 34); 
+}
+
+.wrap-bottom-bar{
     display: flex;
-    background-color: rgb(34, 34, 34);
     align-items: center;
     justify-content: space-between;
+    margin: 0 20vh 0 20vh
 }
 
 .bottom-bar img {
@@ -142,8 +189,7 @@ body {
 }
 
 .bottom-bar h3{
-    /* float: left; */
-    /* color: black; */
     color: rgb(241, 242, 236);
-    font-size: 13px;
+    font-size: 20px;
+    font-family: Amatic-B;
 }
