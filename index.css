@@ -49,16 +49,16 @@ body {
 }
 
 .top-bar img {
-    height: 120px;
+    height: 15vh;
     width: auto;
     float: left;
-    padding-left: 15px;
+    padding-left: 5vh;
 }
 
 .top-bar h1{
     float: left;
     font-size: 2.3rem;
-    padding-top: 20px;
+    padding-top: 2.5vh;
     font-family: Amatic-B;
 }
 
@@ -73,7 +73,7 @@ body {
     color: rgb(241, 242, 236);
     cursor: pointer;
     float: right;
-    margin:25px 10px 0 0;
+    margin:3vh 5vh 0 0;
     /* border: solid 0.5px black; */
 }
 
@@ -102,7 +102,7 @@ body {
     position: relative;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 3vh;
 }
 
 .description{
@@ -123,7 +123,7 @@ body {
     font-size: 1rem;
     background-color: transparent;
     text-decoration: none;
-    padding: 10px;
+    padding: 1.2vh;
     border: 1px solid black;
     border-radius: 17px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -143,27 +143,17 @@ body {
     position: relative;
     align-items: center;
     justify-content: center;
-    margin: 30px;
-}
-
-.phone-css-effect{
-    padding: 20px 40px;
-}
-
-
-.phone-css-effect img {
-    height: 300px;
-    width: auto;
+    margin: 4vh;
 }
 
 .qrcode{
-    padding: 20px;
-    border-left: 1px solid black;
+    padding: 5vh;
 }
 
 .qrcode img{
-    height: 150px;
+    height: 18vh;
     width: auto;
+    cursor: pointer;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -181,8 +171,8 @@ body {
 }
 
 .bottom-bar img {
-    padding: 15px 25px 0 25px;
-    height: 70px;
+    padding: 3vh 5vh 0 5vh;
+    height: 7vh;
     width: auto;
     float: left;
     position: relative;
@@ -190,6 +180,6 @@ body {
 
 .bottom-bar h3{
     color: rgb(241, 242, 236);
-    font-size: 20px;
+    font-size: 1.2rem;
     font-family: Amatic-B;
 }
